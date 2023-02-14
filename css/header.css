@@ -39,6 +39,12 @@
 .menu li a:hover{
     color: #03b62194;
 }
+
+.menu {
+    position: sticky;
+    top: -1px;
+    background-color: black ;
+}
 /*Código para o estilo do button*/
 .menu li a button{
     color: #011f06;
