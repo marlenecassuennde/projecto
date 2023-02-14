@@ -40,10 +40,12 @@
     color: #03b62194;
 }
 
-.menu {
+header {
     position: sticky;
     top: -1px;
-    background-color: black ;
+    background-color: #09090D;
+    
+    
 }
 /*Código para o estilo do button*/
 .menu li a button{
