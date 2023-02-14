@@ -1,0 +1,61 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Estilo para o cabeçalho apenas*/
+/*Area do cabeçalho */
+.cabecalho{
+    background-color: #09090D;
+    padding:20px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around ; 
+}
+/*Estilo do titúlo*/
+.cabecalho h1{
+    color: #ccc;
+    margin: 10px;
+}/*Link do Titúlo*/
+.cabecalho h1 a{
+    text-decoration: none;
+    color: #ccc;
+    text-transform: uppercase;
+    padding: 10px;
+}
+/*Aqui é a nossa nav.menu*/
+.menu li{
+    margin: 0 10px;
+    display: inline-block;
+}
+.menu li a{
+    text-decoration: none;
+    color: #ccc;
+    text-transform: uppercase;
+    padding: 10px;
+}
+.menu li a:hover{
+    color: #03b62194;
+}
+/*Código para o estilo do button*/
+.menu li a button{
+    color: #011f06;
+    border: none;
+    padding: 15px 30px;
+    outline: none;
+    border-radius: 20px;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right,#3b7e04,#04681d);
+
+}/*Código para a animação do button*/
+.menu li a button:hover{
+    transform: scale(1.10);
+    transition: .1s;
+    color: #0ed42f94;
+    cursor: pointer;
+
+
+}
+ 
