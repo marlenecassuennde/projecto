@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'roboto';
+    src: url(../fonts/Roboto/Roboto-Black.ttf) format('truetype');
+}
+body{
+    font-family: 'roboto';
+    /*background-image: linear-gradient(to right,#3434dad3,#1b1beb);*/
+    background-color: white;
+}
+.box{
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #000000d3;
+    padding: 15px;
+    border-radius: 15px;
+    width: 30%;
+    box-shadow: 3px 3px 1px 0px #00000049;
+}
+fieldset{
+    border: 3px solid transparent;
+    padding: 10px;
+}
+legend{
+    background-image: linear-gradient(to right,#be6f08,#e28000);
+    padding: 5px 40px;
+    text-align: center; 
+    border-radius: 3px;  
+}
+.inputbox{
+    position: relative;
+}
+.inputUser{
+    background: none;
+    border:none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top: -20px;
+    font-size: 12px;
+    color: #b37a10;
+}
+#submit{
+    background-image: linear-gradient(to right,#be6f08,#e28000);
+    border: none;
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
+#submit:hover{
+    transform: scale(1.03);
+    background-color:black ;
+    color: white;
+    transition: .2s;
+    
+}

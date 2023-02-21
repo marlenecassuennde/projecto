@@ -37,31 +37,24 @@
     padding: 10px;
 }
 .menu li a:hover{
-    color: #03b62194;
-}
-
-header {
-    position: sticky;
-    top: -1px;
-    background-color: #09090D;
-    
-    
+    color: #d8d405;
 }
 /*Código para o estilo do button*/
 .menu li a button{
-    color: #011f06;
+    font-weight: bold;
+    color: black;
     border: none;
     padding: 15px 30px;
     outline: none;
     border-radius: 20px;
     text-transform: uppercase;
-    background-image: linear-gradient(to right,#3b7e04,#04681d);
+    background-image: linear-gradient(to right,#be6f08,#e28000);
 
 }/*Código para a animação do button*/
 .menu li a button:hover{
     transform: scale(1.10);
     transition: .1s;
-    color: #0ed42f94;
+    color: yellow;
     cursor: pointer;
 
 
