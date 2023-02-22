@@ -10,12 +10,11 @@ $sexo = $_POST['sexo'];
 $contacto = $_POST['telefone'];
 $email = $_POST['email'];
 
-$sql_cadastro=mysqli_query($conecao, "INSERT INTO tb_usuario(usuario, senha, nomecompleto, morada, sexo, contacto, email) VALUES ('$usuario', '$senha', '$nomecompleto', '$morada', '$sexo', '$contacto', '$email')");
+
+$sql_cadastro=mysqli_query( $conecao, "INSERT INTO tb_usuario (usuario, senha, nomecompleto, morada, sexo, contacto, email) VALUES ('$usuario', '$senha', '$nomecompleto', '$morada', '$sexo', '$contacto', '$email')");
 
 
-if($sql_cadastro==true){
-
-    
+if($sql_cadastro==true){    
 
     echo "  <script>
     

@@ -1,11 +1,12 @@
 <?
-require_once('coneccao.php');
+include_once('coneccao.php');
 
 $usuario = $_POST('usuario');
 $senha = $_POST('senha');
-$sql_logar = mysqli_query($conecao,"SELECT * FROM tb_usuario WHERE usuario = '$usuario' and senha = '$senha'");
+$sql_logar = mysqli_query($conecao,"SELECT * FROM `tb_usuario` WHERE usuario = '$usuario' and senha = '$senha'");
 
 if($sql_logar==true){
+
 
   /*  header('location:../index.html');
 }
