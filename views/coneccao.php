@@ -1,5 +1,3 @@
-<?php
-   
-   $coneccao =mysqli_connect('localhost','root','','db_restaurante');
-
+<?
+$conecao = mysqli_connect('localhost', 'root', '', 'db_restaurante');
 ?>

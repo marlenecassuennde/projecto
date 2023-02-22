@@ -1,6 +1,6 @@
 <?php
 
-require_once('coneccao.php');
+include_once('coneccao.php');
 
 $usuario = $_POST['usuario'];
 $senha = $_POST['senha'];
@@ -10,9 +10,7 @@ $sexo = $_POST['sexo'];
 $contacto = $_POST['telefone'];
 $email = $_POST['email'];
 
-
-
-$sql_cadastro = mysqli_query( $coneccao , " INSERT INTO tb_usuario(usuario, senha, nomecompleto,morada,sexo,contacto,email ) VALUES ('$usuario','$senha', '$nomecompleto','$morada','$sexo', '$contacto', '$email') " );
+$sql_cadastro=mysqli_query($conecao, "INSERT INTO tb_usuario(usuario, senha, nomecompleto, morada, sexo, contacto, email) VALUES ('$usuario', '$senha', '$nomecompleto', '$morada', '$sexo', '$contacto', '$email')");
 
 
 if($sql_cadastro==true){
